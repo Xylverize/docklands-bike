@@ -29,8 +29,8 @@
 								<img src="<?php echo base_url(); ?>assets/img/s1.png"  width="200" height="170"halt="">
 							</div>
 							<div class="shop-body">
-								<h4>Specialized</h4>
-								<a href="<?php echo base_url('alatmusik'); ?>" class="cta-btn">Shop now<i class="fa fa-arrow-circle-right"></i></a>
+								<h4 style= "color:white">Specialized</h4>
+								<a href="<?php echo base_url('allproducts'); ?>" class="cta-btn">Shop now<i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -43,8 +43,8 @@
 								<img src="<?php echo base_url(); ?>assets/img/trek1.png"  width="200" height="170"alt="">
 							</div>
 							<div class="shop-body">
-								<h4>Trek</h4>
-								<a href="<?php echo base_url('aksesoris'); ?>" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+								<h4 style= "color:white">Trek</h4>
+								<a href="<?php echo base_url('allproducts'); ?>" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -57,8 +57,8 @@
 								<img src="<?php echo base_url(); ?>assets/img/can1.png"  width="200" height="170"alt="">
 							</div>
 							<div class="shop-body">
-								<h4>Cannondale</h4>
-								<a href="<?php echo base_url('soundsystem'); ?>" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
+								<h4 style= "color:white">Cannondale</h4>
+								<a href="<?php echo base_url('allproducts'); ?>" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>

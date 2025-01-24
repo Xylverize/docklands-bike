@@ -40,7 +40,7 @@
 								<div class="product-body">
 									<p class="product-category"><?php echo $product->kategori; ?></p>
 									<h3 class="product-name"><a href="<?php echo base_url('details/index/'.$product->id_product); ?>"><?php echo $product->nama_product; ?></a></h3>
-									<h4 class="product-price">Rp<?php echo number_format($product->harga,2,',','.'); ?></h4>
+									<h4 class="product-price">$<?php echo number_format($product->harga,2,',','.'); ?></h4>
 								</div>
 							</div>
 							<?php if($break >= 5){break;} } ?>
@@ -73,7 +73,7 @@
 						<div class="row">
 							
 							<!-- product -->
-							<?php $break=0; $i=0; foreach (array_reverse($dataproduct) as $product) { $break++; if($product->kategori == 'Alat Musik'){ $i++; ?>
+							<?php $break=0; $i=0; foreach (array_reverse($dataproduct) as $product) { $break++; { $i++; ?>
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<a href="<?php echo base_url('details/index/'.$product->id_product); ?>">
@@ -84,7 +84,7 @@
 									<div class="product-body">
 										<p class="product-category"><?php echo $product->kategori; ?></p>
 										<h3 class="product-name"><a href="<?php echo base_url('details/index/'.$product->id_product); ?>"><?php echo $product->nama_product; ?></a></h3>
-										<h4 class="product-price">Rp<?php echo number_format($product->harga,2,',','.'); ?></h4>
+										<h4 class="product-price">$<?php echo number_format($product->harga,2,',','.'); ?></h4>
 										<div class="product-rating">
 										</div>
 										<input type="hidden" name="quantity" id="<?php echo $product->id_product;?>" value="1" class="quantity form-control">

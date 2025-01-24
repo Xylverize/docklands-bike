@@ -19,19 +19,19 @@
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-phone"></i>+62-87834950559</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>almuscompany@gmail.com</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>0405928762</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>admin@docklands.com</a></li>
 								</ul>
 							</div>
 						</div>
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Categories</h3>
+								<h3 class="footer-title">Supplier</h3>
 								<ul class="footer-links">
-									<li><a href="#">Alat Musik</a></li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Sound System</a></li>
+									<li><a href="#">Specialized</a></li>
+									<li><a href="#">Trek</a></li>
+									<li><a href="#">Cannondale</a></li>
 								</ul>
 							</div>
 						</div>

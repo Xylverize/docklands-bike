@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class alatmusik extends CI_Controller {
+class aboutus extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,7 +23,7 @@ class alatmusik extends CI_Controller {
 		$kode = 'all';
 		$this->load->model('model_product');
 		$data_product['dataproduct']=$this->model_product->tampil_data_product($kode);
-		$this->load->view('alat-musik',$data_product);
+		$this->load->view('aboutus',$data_product);
 	}
 
 }

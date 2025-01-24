@@ -29,7 +29,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <h5>Product List</h5>
-                                <button type="button" class="btn btn-primary waves-effect waves-light f-right d-inline-block md-trigger" data-modal="modal-13"> <i class="icofont icofont-plus m-r-5"></i> Tambah Product
+                                <button type="button" class="btn btn-primary waves-effect waves-light f-right d-inline-block md-trigger" data-modal="modal-13"> <i class="icofont icofont-plus m-r-5"></i> Add Product
                                 </button>
                             </div>
                             <div class="card-block">
@@ -40,12 +40,12 @@
                                                 <thead>
                                                     <tr>
                                                         <th>No</th>
-                                                        <th>Foto</th>
-                                                        <th>Nama Produk</th>
+                                                        <th>Photo</th>
+                                                        <th>Product Name</th>
                                                         <th>Supplier</th>
                                                         <th>Status</th>
-                                                        <th>Stok</th>
-                                                        <th>Harga</th>
+                                                        <th>Stock</th>
+                                                        <th>Price</th>
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>
@@ -63,7 +63,7 @@
                                                         <td><?php echo $product->kategori; ?></td>
                                                         <td><?php echo $product->status_stok; ?></td>
                                                         <td><?php echo $product->stok; ?></td>
-                                                        <td>Rp<?php echo number_format($product->harga,2,',','.'); ?></td>
+                                                        <td>$<?php echo number_format($product->harga,2,',','.'); ?></td>
                                                         <td class="action-icon">
                                                             <a href="#" class="m-r-15 text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="icofont icofont-ui-edit"></i></a>
                                                             <a href="<?php echo site_url('admin/delete_product/'.$product->id_product);?>" class="text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><i class="icofont icofont-delete-alt"></i></a>
@@ -84,7 +84,7 @@
                 <?php echo form_open_multipart('admin/simpan_product');?>
                 <div class="md-modal md-effect-13 addcontact" id="modal-13">
                     <div class="md-content">
-                        <h3 class="f-26">Tambah Product</h3>
+                        <h3 class="f-26">Add Product</h3>
                         <div>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="icofont icofont-user"></i></span> 

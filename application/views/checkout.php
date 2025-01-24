@@ -47,7 +47,7 @@
 						<!-- Billing Details -->
 						<div class="billing-details">
 							<div class="section-title">
-								<h3 class="title">Detail Pembeli</h3>
+								<h3 class="title">Customer Details</h3>
 							</div>
 							<div class="form-group">
 								<input class="input" type="text" name="nama" placeholder="Nama Lengkap" value="<?php echo $_SESSION['nama']; ?>" required>
@@ -93,7 +93,7 @@
 					<!-- Order Details -->
 					<div class="col-md-5 order-details">
 						<div class="section-title text-center">
-							<h3 class="title">Detail Belanja</h3>
+							<h3 class="title">Order Details</h3>
 						</div>
 						<div class="order-summary">
 							<div class="order-col">
@@ -104,13 +104,13 @@
 								<?php foreach($this->cart->contents() as $items): ?>
 								<div class="order-col">
 									<div><?php echo $items['qty']; ?>x <?php echo $items['name']; ?></div>
-									<div>Rp<?php echo number_format($items['subtotal'],2,',','.'); ?></div>
+									<div>$<?php echo number_format($items['subtotal'],2,',','.'); ?></div>
 								</div>
 								<?php endforeach; ?>
 							</div>
 							<div class="order-col">
 								<div><strong>TOTAL</strong></div>
-								<div><strong class="order-total">Rp<?php echo number_format($this->cart->total(),2,',','.'); ?></strong></div>
+								<div><strong class="order-total">$<?php echo number_format($this->cart->total(),2,',','.'); ?></strong></div>
 							</div>
 						</div>
 						<div class="payment-method">
@@ -125,7 +125,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="submit" name="checkout_submit" class="primary-btn" style="width: 100%;">Beli</button>
+						<button type="submit" name="checkout_submit" class="primary-btn" style="width: 100%;">Check Out</button>
 					</div>
 					<!-- /Order Details -->
 					</form>

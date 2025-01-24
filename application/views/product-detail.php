@@ -63,7 +63,7 @@
 								<a class="review-link" href="#">10 Review(s) | Add your review</a>
 							</div> -->
 							<div>
-								<h3 class="product-price">Rp<?php echo number_format($dataproduct->harga,2,',','.'); ?></h3>
+								<h3 class="product-price">$<?php echo number_format($dataproduct->harga,2,',','.'); ?></h3>
 								<!-- <span class="product-available">In Stock</span> -->
 							</div>
 
@@ -187,7 +187,7 @@
 							<div class="product-body">
 								<p class="product-category"><?php echo $product->kategori; ?></p>
 								<h3 class="product-name"><a href="<?php echo base_url('details/index/'.$product->id_product); ?>"><?php echo $product->nama_product ?></a></h3>
-								<h4 class="product-price">Rp<?php echo number_format($product->harga,2,',','.'); ?></h4>
+								<h4 class="product-price">$<?php echo number_format($product->harga,2,',','.'); ?></h4>
 								<div class="product-rating">
 								</div>
 								<input type="hidden" name="quantity" id="<?php echo $product->id_product;?>" value="1" class="quantity form-control">

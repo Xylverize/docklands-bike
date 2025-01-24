@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class soundsystem extends CI_Controller {
+class allproducts extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,7 +23,7 @@ class soundsystem extends CI_Controller {
 		$kode = 'all';
 		$this->load->model('model_product');
 		$data_product['dataproduct']=$this->model_product->tampil_data_product($kode);
-		$this->load->view('soundsystem',$data_product);
+		$this->load->view('allproducts',$data_product);
 	}
 
 }
